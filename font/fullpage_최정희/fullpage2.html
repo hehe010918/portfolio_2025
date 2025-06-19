@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션연결하기</title>
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none;}
+
+        .b1{background: url(img/bg1.jpg) center/cover;}
+        .b2{background: url(img/bg2.jpg) center/cover;}
+        .b3{background: url(img/bg3.jpg) center/cover;}
+        .b4{background: url(img/bg4.jpg) center/cover;}
+        .b5{background: url(img/bg5.jpg) center/cover;}
+
+        #menu{position: fixed; width: 100%; height: 60px; background-color: rgba(0, 0, 0, .5); top: 0; left: 0; display: flex; gap: 40px; justify-content: center;  z-index: 20; align-items: center;}
+        #menu>li>a{color: #fff;}
+        #fullpage{text-align: center; align-items: center; font-size: 40px;color: #fff;}
+    </style>
+</head>
+<body>
+    <!-- 네비게이션구조 -->
+     <ul id="menu"><!--id는 딱한번만 사용할수있어서 주소로 사용할수있음-->
+        <li data-menuanchor="home"><a href="#home">home</a></li>
+        <li data-menuanchor="about"><a href="#about">about</a></li>
+        <li data-menuanchor="service"><a href="#service">service</a></li>
+        <li data-menuanchor="contect"><a href="#contect">contect</a></li>
+        <li data-menuanchor="ready"><a href="#ready">ready</a></li>
+     </ul>
+    <div id="fullpage">
+        <div class="section b1" id="x">Some section1</div>
+        <div class="section b2" id="x">Some section2</div>
+        <div class="section b3" id="x">Some section3</div>
+        <div class="section b4" id="x">Some section4</div>
+        <div class="section b5" id="x">Some section5</div>
+        <!-- id값 추가 안해도 됨( id값과 a태그가 같은 이름을 가지면 그페이지로 이동 , 스크롤기능x) -->
+         <!--script의 anchors 와 data-menuanchor 가 서로인식 후 a태그 주소로이동하는줄..   -->
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //fullpage안에{}추가후 속성추가
+                anchors: ['home', 'about', 'service', 'contect', 'ready'],
+	            menu: '#menu',
+                navigation: true,//네비호출
+                navigationPosition: 'left',//네비위치
+                navigationTooltips: ['home', 'about', 'service', 'contect', 'ready'],//안내문구제공
+            });
+        });
+    </script>
+</body>
+</html>
