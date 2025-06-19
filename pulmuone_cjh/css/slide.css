@@ -1,0 +1,63 @@
+
+
+
+/* 추천슬라이드 */
+.recommend-slide{width: 100%; position: relative;}
+
+/* 추천슬라이드 swiper 컨테이너 밖에 next, prev 버튼이 있는 구조인데
+-> swiper에 강력한 오버플로히든 속성때문에 화살표 밖으로 뺄수 없다 
+
+/* overflow:hidden문제 발생 -> 구조 다시잡아야함
+
+ recommend-btn 박스 하나 추가해 swiper화살표버튼 담는다.
+(recommend-btn + recommend-slide : 형제구조)
+*/
+
+.slideBox{position: relative; margin-top: 47px;}
+.recommend-btn{width: calc(100% + 100px);  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) ;box-sizing: border-box; } 
+
+.recommend-btn .swiper-button-prev:after,
+.recommend-btn .swiper-button-next:after{content: '';}
+
+.recommend-btn .swiper-button-prev,
+.recommend-btn .swiper-button-next{background: url(../img/arrow_best.png) no-repeat center/contain; width: 15px; height: 30px;}
+.recommend-btn .swiper-button-next{transform: rotate(180deg);}
+
+.recommend-page{width: 100%; height: 10px; padding-top: 30px; position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); z-index: 20;}
+.recommend-page .swiper-pagination-bullet{}
+.recommend-page .swiper-pagination-bullet-active{background-color: #86C852; width: 12px; border-radius: 10px;}
+
+
+/* 이벤트 슬라이드 */
+/* effect:"coverflow"
+    coenteredSlides: true, 함께 사용됐을때 슬라이드 문제가 생기게된다.
+
+    1. loop:true,추가
+    2. 세번째 슬라이드 태그를 한번더 복사해서 출력시켜준다.
+    (슬라이드 3개 돌아가면 총4개 있어야함)
+*/
+
+.event-area{}
+.event-area article{padding:120px 50px; position: relative;}
+.event-slide{ position: relative; width: 100%; height: 300px;}
+
+.event-slide .swiper-slide{width: 740px;  height: 300px; border-radius: 40px 0; z-index: 50; overflow: hidden; transform: translate3d(0px, 0px, -450px) rotateX(0deg) rotateY(0deg) scale(0.5) !important; opacity: .6;} 
+.event-slide .swiper-slide-active{opacity: 1;}
+
+.p1{background: url(../img/ev1.png) no-repeat center/cover;}
+.p2{background: url(../img/ev2.png) no-repeat center/cover;}
+.p3{background: url(../img/ev3.png) no-repeat center/cover;}                    
+
+/* coverflow 속성변경 */
+
+.event-slide .swiper-slide.swiper-slide-active{transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1) !important;}
+
+
+.event-page{width: 100%; height: 20px;transform: translateX(-50%); left: 50%; position: absolute; bottom: 50px; padding: 5px 0;} 
+.event-page .event-pagination{}
+
+.swiper-pagination-bullet{} 
+.swiper-pagination-bullet-active{width: 15px; background-color: #86C852; border-radius: 10px;}
+
+
+

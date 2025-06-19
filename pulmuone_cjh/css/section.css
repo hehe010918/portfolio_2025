@@ -1,0 +1,137 @@
+body{overflow-x: hidden;}
+
+/* common */
+.inner{width: 1200px; margin: 0 auto;}
+.tit{font-family: 'Spoqa-Medium'; font-size: 32px; line-height: 40px; letter-spacing: -2.4px; color: #000;}
+
+/* Sec01 */
+
+.Sec01{ margin-top: 50px;}
+
+dl.inner{ height: 300px; border-radius: 40px 0; box-shadow: 0 4px 4px #e5e5e5; border: 1px solid #e5e5e5; display: flex; justify-content: space-between; align-items: center; }
+dl.inner dt{width: 273px; margin-left: 50px;}
+dl.inner dd{margin-right: 50px;}
+
+dt>img{width: 27px; height: auto; }
+dt>h2{font-family: 'Spoqa-Regular'; font-size: 30px; line-height: 29px; letter-spacing: -2.3px; color: #333; margin: 12px 0 34px; text-wrap: nowrap;}
+dt>h2>strong{font-family: 'Spoqa-Medium';}
+dt>h2>em{font-family: 'Spoqa-Medium'; color: #86C852;}
+dt>h3{ font-family: 'Spoqa-Bold'; font-size: 16px; line-height: 20px; letter-spacing: -1.1px; color: #333; position: relative;}
+dt>h3::after{ content: '';background: url(../img/left_short_arrow.png) no-repeat; 
+    position: absolute; left: 80px; top: 4px; display: block; width: 8px; height: 12px; background-size: 8px 12px;}
+/* 가상선택자는 인라인 요소-> 블록으로 변경
+     배경으로 가상선택자 사용할때 크기값 잡아줘야함(중요)
+     이미지 아니기 때문에 높이값 자동말고 px값으로 (배경이 들어갈 크기지정)
+     이미지 크기줄이거나 늘릴때 -> background-size*/
+
+dd>ul.menu{display: flex; gap: 40px;}
+.menu>li{width: 110px; text-align: center;}
+.menu>li>a{display: block; align-items: center; margin-bottom: 24px;}
+.menu>li>a>img{width: 72px; height: auto;}
+.menu>li>span{font-family: 'Spoqa-Medium';  font-size: 19px; line-height: 20px; letter-spacing: -1.1px; color: #333; }
+
+/* Sec02 */
+
+.Sec02{margin-bottom: 30px; background-color: #eee; margin-top: 100px; }
+.Sec02 .inner{padding: 24px 0 20px; box-sizing: border-box; }
+
+.slideBox{display: flex; gap: 34px; margin: 26px 0 18px; }
+.item{width: 25%;background-color: #eee; position: relative;}
+/* 4개를 나눠야해서
+ position: relative; 부모역할 할 수 있는 아무곳에 넣어도 ok
+ */
+.item>div>a{display: flex; flex-direction: column;}
+/* 전체영역을 클릭할수있게 */
+
+.thumb{position: relative; border: 1px solid #000; border-radius: 20px 0; overflow: hidden; height: 300px;}
+/* 자식으로인한 높이 값이 아닌 고정 높이값이 있음(300px)
+->img 높이부족 현상 */
+.thumb>img{width: 100%; height: 100%; object-fit: cover;}
+/* img를 background cover속성처럼 꽉채우기
+width:100% height:100%만 하면 해상도 깨짐 */
+.btn_box{display: flex; gap: 6px; position: absolute; top: 14px;left: 14px;}
+/* 부모에게 flex부여시 자식도 블록성질이 됨 */
+.btn_box>span{font-family: 'Spoqa-Regular'; font-size: 14px; line-height: 14px; letter-spacing: -1px; padding: 7px 10px; border-radius: 10px 0; color: #fff;}
+/* 스타일링동일 */
+.best{background-color: #86C852;}
+.new{background-color: #FF8A00;}
+.hidden{display: none;}
+/* 히든 클라스는 불릿안보이게 */
+
+.ico_wish{width: 42px; height: 42px;  position: absolute; top: 6px; right: 6px;}
+.ico_wish>img{width: 20px; height: auto;}
+
+.ico_cart{width: 42px; height: 42px; border-radius: 25px; 
+background: #86C852 url(../img/ico_cart02.png) no-repeat center;
+position: absolute;bottom: 12px; right: 19px;}
+
+.txt{text-align: center;  display: flex; flex-direction: column; }
+.txt>strong{font-family: 'Spoqa-Thin'; font-size: 18px; line-height: 26px; letter-spacing: -1px; color: #999;  margin: 25px 0 27px;}
+.txt>.price{font-family: 'Spoqa-Regular'; font-size: 16px; line-height: 22px; letter-spacing: -1px; color: #999;
+display: block; }
+.price>b{color: #333;}
+.txt>p{font-family: 'Spoqa-Regular'; font-size: 15px; line-height: 22px; letter-spacing: -1px; color: #999; margin: 9px 0 4px;}
+
+/* Sec03 */
+
+.Sec03{height: 180px; background: url(../img/banner_item01.png) no-repeat center/cover;}
+
+/* Sec04 */
+
+.Sec04{margin-top: 50px;}
+.Sec04 .inner{height: 546px; position: relative;}
+
+.inner .event-area h3{position: absolute; top: 57px; left: 0;}
+.event-area .all{position: absolute; top: 73px; right: 20px;
+    font-family: 'Spoqa-Bold'; font-size: 16px; line-height: 20px; letter-spacing: -1.1px; color: #333;}
+.event-area .all::after{content: ''; display: block;
+     background: url(../img/left_short_arrow.png) no-repeat; 
+     width: 8px; height: 12px; background-size: 8px 12px;
+    position: absolute; top: 4px; right: -12px;}
+    
+.con{width: 740px; height: 300px; border-radius: 40px 0; background-color: antiquewhite; overflow: hidden; position: absolute; bottom: 125px; left: 250px;}
+/* con의 자리와 위치값 */
+
+/* Sec05 */
+
+.Sec05{width: 100%; height: 681px; background-color: #fafafa; border: #e5e5e5 1px solid;}
+.Sec05 .inner{}
+.Sec05 .inner .tit{margin:127px 0 25px;}
+
+.panel{display: flex; gap: 34px; }
+ul.tab{width: 25%; height: 360px; border-top: #000 2px solid; background-color: #fff; position: relative;}
+.tab>li{}
+
+.tab>li>h4{font-family: 'Spoqa-Medium'; font-size: 24px; line-height: 150%; letter-spacing: -1.8px; color: #333;
+margin-top: 55px;}
+.tab>li>p{font-family: 'Spoqa-Regular'; font-size: 14px; line-height: 150%; letter-spacing: -1px; color: #666;
+margin: 10px 0 83px;}
+
+.tab>li>img{width: 268px; height: 134px; position: absolute;bottom: 0; left: 20px;}
+
+/* Sec06 */
+
+.Sec06{width: 100%; height: 65px; background-color: #fafafa; border: #e5e5e5 solid 1px;}
+
+.Sec06 .inner{position: relative; padding: 20px 0; box-sizing: border-box;}
+
+.Sec06 .inner>b{font-family: 'Spoqa-Bold'; font-size: 16px; line-height: 150%; letter-spacing: -1.2px; color: #333; }
+.Sec06 .inner>span{font-family: 'Spoqa-Regular' ; font-size: 16px; line-height: 150%; letter-spacing: -1.2px; color: #333; margin-left: 100px;}
+
+.plus{}
+.plus>a{width: 15px; height: 15px; display: block; position: absolute; right: 0; top: 25px;}
+.plus>a>img{width: 100%; height: 100%; object-fit: cover;}
+
+/* footer */
+
+.footer{height: 344px; background-color: #f5f5f5; border: #e5e5e5 solid 1px;}
+.footer .inner{position: relative;}
+
+ul.fnb{display: flex; gap: 30px; margin-top: 20px; }
+.fnb li{font-family: 'Spoqa-Medium'; font-size: 14px; line-height: 140%; letter-spacing: -1px; color: #333;}
+
+.f_btn{ position: absolute; top: 40px; right: 0; width: 178px; height: 38px; padding: 9px 20px; box-sizing: border-box; background-color: #fff; border-radius: 30px;}
+.f_btn>span{font-family: 'Spoqa-Regular' ; font-size: 14px; line-height: 140%; letter-spacing: -0.3px; color: #666; position: relative;}
+
+.f_btn>span::after{content: ''; display: block; background: url(../img/ui_select_down.png) no-repeat; width: 10px; height: 6px; position: absolute; right: -54px; top: 8px;
+background-size: 10px 6px; }

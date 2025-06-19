@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀무원녹즙</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <!-- 번들.css  reset.css바로밑에 -->
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/mainslide.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/gnb.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <div class="logo-area">
+                <h1 class="logo">
+                    <a href="./pulmuwone.html">
+                        <img src="img/account_logo.png" alt="">     
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <button class="all-menu">
+                                <i class="ico-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <!-- 바디자인 -->
+                                </i>
+                                <span>메뉴보기</span>
+                            </button>
+                        </li>
+                        <li><a href="./daily.html">매일배송</a></li>
+                        <li><a href="">택배배송</a></li>
+                        <li><a href="">맞춤큐레이션</a></li>
+                        <li><a href="">시음선물</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">고객기쁨센터</a></li>
+                    </ul>
+                </nav>
+            </div><!--logo-area-->
+            <div class="search-area">
+                <div class="util">
+                    <a href=""><img src="img/ico_member.png" alt=""></a>
+                    <a href=""><img src="img/ico_cart01.png" alt=""></a>
+                </div>
+                <form action="" class="search-form">
+                    <!-- form:검색,로그인,회원가입 입력값처리하는 태그 -->
+                    <input type="text">
+                    <button><i class="sch"></i></button>
+                </form>
+            </div><!--search-area-->
+        </div>
+        <!-- 버튼슬라이드 -->
+        <!-- 헤더의 자식 logo,gnb,search-area 의 형제-->
+        <div class="gnbWrap">
+            <div class="inner">
+                <ol id="depth1">
+                    <!-- 닫기버튼 -->
+                    <div class="close">
+                        <button><img src="img/btn_close.png" alt="">닫기버튼</button>
+                    </div>
+                    <li>
+                        <strong>매일배송</strong>
+                        <ul class="depth2">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">녹즙</a></li>
+                            <li><a href="#">엑스투</a></li>
+                            <li><a href="#">유산균</a></li>
+                            <li><a href="">유제품</a></li>
+                            <li><a href="">건강품</a></li>
+                            <li><a href="">영양&간식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>택배배송</strong>
+                        <ul class="depth2">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">클렌즈렙</a></li>
+                            <li><a href="#">스무디</a></li>
+                            <li><a href="">건강즙</a></li>
+                            <li><a href="">키즈</a></li>                            
+                            <li><a href="">영양&간식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>이벤트</strong>
+                        <ul class="depth2">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">종료된 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">회원혜택</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>창업안내</strong>
+                        <ul class="depth2">
+                            <li><a href="#">가맹점 개설안내</a></li>
+                            <li><a href="#">모닝스텝 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>고객기쁨센터</strong>
+                        <ul class="depth2">
+                            <li><a href="#">내 가맹점 찾기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    <!-- 배경 윈도우100% -->
+    <div class="bg"></div>
+    <figure class="main_visual">
+        <!--슬라이드 fade하게 (변경완료)-->
+        <!-- Slider main container -->
+        <div class="swiper mainSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide pic1"></div>
+                <div class="swiper-slide pic2"></div>
+                <div class="swiper-slide pic3"></div>
+                <div class="swiper-slide pic4"></div>
+            </div>
+        
+            <div class="btnWrap">
+                <div class="swiper-button-prev arrow main-prev"></div>
+                <div class="swiper-pagination number"></div>
+                <div class="swiper-button-next arrow main-next"></div>
+
+            </div>
+
+        </div>
+    </figure>
+    <!-- 공통슬라이드 스크립트호출을 외부스크립트로 연결해준다 -->
+    <script src="js/mainslide.js"></script>
+
+    <div id="mainWrap">
+        <section class="Sec01">
+            <dl class="inner">
+                <dt>
+                    <img src="img/ico_member.png" alt="">
+                    <h2><strong>로그인</strong>하시고<br>
+                        <em>맞춤 서비스</em>를 누리세요!</h2>
+                    <h3>로그인 하기</h3>
+                </dt>
+                <dd>
+                    <ul class="menu">
+                        <li>
+                            <a href="#"><img src="img/ico_menu01.png" alt=""></a>
+                            <span>음용내역보기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ico_menu02.png" alt=""></a>
+                            <span>음용상품변경</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ico_menu03.png" alt=""></a>
+                            <span>배송일정변경</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ico_menu04.png" alt=""></a>
+                            <span>찜한상품</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+        <section class="Sec02">
+            <div class="inner">
+                <h3 class="tit">추천상품</h3>
+                <!-- slide (변경완료) -->
+                <article class="slideBox">
+                
+                
+                    <!-- Slider main container -->
+                    <div class="swiper recommend-slide">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- item을 공통 class로 부여 7개 아이템 만들기 -->
+                            <div class="swiper-slide item item1">
+                                <div><!-- swiper-slide 안에 li 카드구조 가져오고 div로 바꾸기 -->
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product1.jpg" alt="">
+                                            <div class="btn_box">
+                                                <span class="best">BEST</span>
+                                                <span class="new">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>당근즙</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item item2">
+                                <div>
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product2.jpg" alt="">
+                                            <div class="btn_box">
+                                                <span class="best">BEST</span>
+                                                <span class="new hidden">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>돌미나리와민들레</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item item3">
+                                <div>
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product3.jpg" alt="">
+                                            <div class="btn_box">
+                                                <span class="best hidden">BEST</span>
+                                                <span class="new">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>러브미케일&셀러리</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item item4">
+                                <div>
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product4.png" alt="">
+                                            <div class="btn_box">
+                                                <span class="best hidden">BEST</span>
+                                                <span class="new hidden">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>두부콩즙</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item item5">
+                                <div>
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product2.jpg" alt="">
+                                            <div class="btn_box">
+                                                <span class="best">BEST</span>
+                                                <span class="new hidden">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>돌미나리와민들레</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item item6">
+                                <div>
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product1.jpg" alt="">
+                                            <div class="btn_box">
+                                                <span class="best hidden">BEST</span>
+                                                <span class="new">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>당근즙</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item item7">
+                                <div>
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product3.jpg" alt="">
+                                            <div class="btn_box">
+                                                <span class="best hidden">BEST</span>
+                                                <span class="new hidden">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>러브미케일&셀러리</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item item8">
+                                <div>
+                                    <a href="#"><!--전체영역이 a태그여서-->
+                                        <div class="thumb"><!--봉다리 4개필요-->
+                                            <img src="img/product4.png" alt="">
+                                            <div class="btn_box">
+                                                <span class="best">BEST</span>
+                                                <span class="new">NEW</span>
+                                            </div>
+                                            <button class="ico_wish">
+                                                <img src="img/ico_wish_off02.png" alt="">
+                                            </button>
+                                            <button class="ico_cart"></button><!--백그라윤드 처리-->
+                                        </div><!--thumb-->
+                                        <div class="txt"><!--글 봉다리 3개필요-->
+                                            <strong>두부콩즙</strong>
+                                            <span class="price"><b>2.900</b>원</span>
+                                            <p>(130ml)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                
+                        </div><!--swiper-wrapper-->
+                
+                
+                    </div><!--recommed-slide-->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="recommend-btn">
+                        <div class="swiper-button-prev recommend-prev"></div>
+                        <div class="swiper-button-next  recommend-next"></div>
+                    </div><!--recommed-btn-->
+
+                    <!-- If we need pagination -->
+                    <div class="recommend-page">                        
+                        <div class="swiper-pagination recommend-pg"></div>
+                    </div><!--recommend-page-->
+                
+                </article>
+
+                <!-- 추천상품 카드구조
+                <ul class="product_list">
+                    <li>
+                        <a href="#">//전체영역이 a태그여서
+                            <div class="thumb">//봉다리 4개필요
+                                <img src="img/product1.jpg" alt="">
+                                <div class="btn_box">
+                                    <span class="best">BEST</span>
+                                    <span class="new hidden">NEW</span>
+                                </div>
+                                <button class="ico_wish">
+                                    <img src="img/ico_wish_off02.png" alt="">
+                                </button>
+                                <button class="ico_cart"></button>//백그라운드 처리
+                            </div>//thumb
+                            <div class="txt">//글 봉다리 3개필요
+                                <strong>돌미나리와민들레</strong>
+                                <span class="price"><b>2.900</b>원</span>
+                                <p>(130ml)</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+        </section>
+        <section class="Sec03"></section>
+        <section class="Sec04">
+            <div class="inner">   
+              <!--    <h3 class="tit">녹즙 시음을 선물해보세요!</h3>
+                <span>전체보기</span>
+               <div class="con"></div>          -->
+                <section class="event-area">
+                    <article>
+                        <h3 class="tit">녹즙 시음을 선물해보세요!</h3>
+                        <a href="#" class="all">전체보기</a>
+
+                        <div class="event-page">
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination event-pagination"></div>
+                        </div>
+
+                        <!-- Slider main container -->
+                        <div class="swiper event-slide">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide p1"></div>
+                                <div class="swiper-slide p2"></div>
+                                <div class="swiper-slide p3"></div>
+                                <div class="swiper-slide p3"></div>
+
+                            </div>
+
+                        </div>
+                        </article>
+                </section>
+                
+            </div>
+        </section>
+        <section class="Sec05">
+            <div class="inner">
+                <h3 class="tit">풀무원 녹즙 바로가기</h3>
+                <div class="panel">
+                    <ul class="tab">
+                        <li>
+                            <h4>맞춤큐레이션</h4>
+                            <p>나에게 딱 맞는<br>
+                                녹즙을 추천해드려요</p>
+                        </li>
+                        <li>
+                            <img src="img/main_under_icon_pc_01.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="tab">
+                        <li>
+                            <h4>풀무원녹즙<br>
+                                사용 설명서</h4>
+                            <p>풀무원녹즙을 처음<br>
+                                이용하는 분들을 위해 준비했어요.</p>
+                        </li>
+                        <li>
+                            <img src="img/main_under_icon_pc_02.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="tab">
+                        <li>
+                            <h4>풀무원녹즙<br>
+                                고객기쁨센터</h4>
+
+                        </li>
+                        <li>
+                            <img src="img/main_under_icon_pc_03.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="tab">
+                        <li>
+                            <h4>내 가맹점 찾기</h4>
+         
+                        </li>
+                        <li>
+                            <img src="img/main_under_icon_pc_04.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="Sec06">
+            <div class="inner">
+                <b>공지사항</b>
+                <span>풀무원녹즙 일부 가격 인상 안내(24.09.01 부)</span>
+                <div class="plus">
+                    <a href="#"><img src="img/ui_plus01.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </div><!--mainWrap-->
+    <footer class="footer">
+        <div class="inner">
+            <ul class="fnb">
+                <li>홈</li>
+                <li>브랜드소개</li>
+                <li>개인정보방침</li>
+                <li>사업소개</li>
+                <li>이메일무단수신거부</li>
+                <li>이용약관</li>
+                <li>제휴문의</li>
+            </ul>
+            <div class="f_btn">
+                <span>FAMILY SITE</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+
+    //
+
+    const swiper2 = new Swiper('.recommend-slide', {
+  // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 30,
+
+
+  // If we need pagination
+  pagination: {
+    el: '.recommend-pg',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.recommend-next',
+    prevEl: '.recommend-prev',
+    // 클래스명을 바꿔준다
+  },
+
+});
+
+//
+
+const swiper3 = new Swiper('.event-slide', {
+  // Optional parameters
+  //direction: 'vertical',
+  loop: true,
+
+  effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto", //이게있어야 크기값먹음
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+
+  // If we need pagination
+  pagination: {
+    el: '.event-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+    </script>
+</body>
+</html>
