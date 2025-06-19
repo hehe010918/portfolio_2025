@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드 출력하기</title>
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .section {
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .b1 {
+            background: url(./img/bg1.jpg) no-repeat center/cover;
+        }
+
+        .b2 {
+            background: url(./img/bg2.jpg) no-repeat center/cover;
+        }
+
+        .b3 {
+            background: url(./img/bg3.jpg) no-repeat center/cover;
+        }
+
+        .b4 {
+            background: url(./img/bg4.jpg) no-repeat center/cover;
+        }
+
+        .b5 {
+            background: url(./img/bg5.jpg) no-repeat center/cover;
+        }
+
+        #menu {
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, .8);
+            top: 0;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+        }
+
+        #menu>li {}
+
+        #menu>li>a {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .slide {
+            position: relative;
+        }
+
+        .boxImg {
+            width: 500px;
+            height: 300px;
+            background-color: lightgoldenrodyellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .fp-prev {
+            left: 10% !important;
+        }
+
+        .fp-next {
+            right: 10% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 네비게이션 -->
+    <ul id="menu">
+        <li data-menuanchor="home"><a href="#home">home</a></li>
+        <li data-menuanchor="about"><a href="#about">about</a></li>
+        <li data-menuanchor="service"><a href="#service">service</a></li>
+        <li data-menuanchor="contact"><a href="#contact">contact</a></li>
+    </ul>
+
+    <div id="fullpage">
+        <div class="section b1">Some section1</div>
+        <div class="section b2">
+            <div class="slide">
+                <div class="boxImg"></div>
+            </div>
+            <div class="slide">
+                <div class="boxImg"></div>
+            </div>
+            <div class="slide">
+                <div class="boxImg"></div>
+            </div>
+            <div class="slide">
+                <div class="boxImg"></div>
+            </div>
+        </div>
+        <div class="section b3">Some section3</div>
+        <div class="section b4">Some section4</div>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['home', 'about', 'service', 'contact'],
+                menu: '#menu',
+                navigation: true,
+                navigationPosition: 'left',
+                navigationTooltips: ['home', 'about', 'service', 'contact'],
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+            });
+        });//doc
+    </script>
+</body>
+
+</html>
