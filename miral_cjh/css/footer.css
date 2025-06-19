@@ -1,0 +1,67 @@
+/* footer */
+.footer{background-color: #3d3d3d; padding: 40px 0 21px;}
+.footer .inner{display: flex; justify-content: space-between; align-items: center;}
+
+.fnb{display: flex;}
+.fnb>li{}
+.fnb>li>a{font-family: 'neo-Rg'; font-size: 15px; line-height: 55px; letter-spacing: -1px;
+display: block;
+padding: 0 15px; 
+color: #fff; position: relative;}
+.fnb>li>a:after{content: 'l'; position: absolute; right: 0; }
+.fnb>li:last-child>a::after{content: none;}
+
+.f-fam{border: 1px #444 solid; width: 400px; height: 55px; position: relative;}
+.f-fam>a{font-family: 'neo-Rg'; font-size: 15px; line-height: 55px; letter-spacing: -0.4px; 
+display: block; color: #aaa;
+padding:0px 18px;
+/*line-height값이 55px로 고정되어있어서 box-sixing안먹음*/
+background: url(../img/main/ft-family-spr.png) no-repeat right 30px center;}
+
+
+/* :hover */
+.f-fam>ul{position: absolute; bottom:55px; left: 0; width: 100%; z-index: 10;
+    /* 부모의 크기 400px을 100%받아오는것
+    부모의 높이가 55px이라서 부모기준으로 밑에서 55px올리기  */
+display: none;
+/*디자인이 잘출력된거 확인하면 dispay:none */  }
+
+.f-fam:hover>ul{display: block;}
+
+.f-fam>ul>li{border-top: 1px solid #575757;}
+.f-fam>ul>li:first-child{border-top: none;}
+
+.f-fam>ul>li>a{font-family: 'neo-Rg'; font-size: 14px; line-height: 35px; text-align: center;
+display: block; color: #fff;
+padding: 10px; background-color: #666;
+}
+/* display */
+
+
+/* -----------------------------------------------------tab */
+@media all and (max-width:1023px){
+    
+    .footer .inner{justify-content: center; }
+    
+    .fnb{ justify-content: center; width: 100%;flex-wrap: wrap;}
+    .fnb>li>a{font-size: 11px; line-height: 35px; color: #b3b3b3; padding:  0 5px;}
+    .fnb>li>a:after{color: #666; font-size: 13px;}
+    
+    .f-fam{display: none;}
+    
+    }/*tab*/
+
+/* --------------------------------------------------------mob */
+@media all and (max-width:750px){
+
+/* .inner{width: 100%; padding: 0 16px; box-sizing: border-box;}---section속성에서 받아옴 */
+
+.footer .inner{justify-content: center; }
+
+.fnb{ justify-content: center; width: 100%;flex-wrap: wrap;}
+.fnb>li>a{font-size: 11px; line-height: 35px; color: #b3b3b3; padding:  0 5px;}
+.fnb>li>a:after{color: #666; font-size: 13px;}
+
+.f-fam{display: none;}
+
+}/*mob*/

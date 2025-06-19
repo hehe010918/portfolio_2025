@@ -1,0 +1,119 @@
+.main{}
+.visual{height: 800px;
+margin-left: 120px; 
+border-radius: 50px 0 0 0;
+overflow: hidden;}
+
+/* mainSwiper */
+
+.mainSwiper{height: 800px; width: 100%; position: relative;}
+
+.mainSwiper .swiper-slide{}
+
+.swiper-slide.p1{background: url(../img/main/visual01.jpg) no-repeat center;}
+.swiper-slide.p2{background: url(../img/main/visual02.png) no-repeat center;}
+.swiper-slide.p3{background: url(../img/main/visual01.jpg) no-repeat center;}
+
+.swiper-pagination.mainPg{position: absolute; bottom: 265px; left: 140px; text-align: start; z-index: 100;}
+.swiper-pagination-bullet{border-radius: 0; width: 40px; height: 10px;}
+.swiper-pagination-bullet-active{background-color: green;}
+
+/* autoplay멈춤 재생 */
+.btn{display: flex; gap: 3px; 
+    position: absolute; bottom: 150px; left: 150px; z-index: 100;
+    padding: 6px 15px; border-radius: 30px;
+    background-color: rgba(0, 0, 0, .5);} 
+.btn button{width: 30px; height: 30px; cursor: pointer; font-size: 0;}
+.btn .swiper-stop{background: url(../img/main/visual_stop.png) no-repeat center/contain;}
+.btn .swiper-start{background: url(../img/main/visual_start.png) no-repeat center/contain;}
+
+
+/* adsSlide 적용 */
+.adSwiper{width: 100%;}
+.adSwiper img{width: auto; height: 50px; object-fit: contain; align-items: center;}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media all and (max-width:1024px){
+
+.visual{height: 450px;
+margin-left: 0px; 
+border-radius: 0px 0 0 0;
+}
+
+/* mainSwiper */
+
+.mainSwiper{height: 450px; width: 100%; position: relative;}
+
+.mainSwiper .swiper-slide{}
+
+.swiper-slide.p1{background: url(../img/main/visual01.jpg) no-repeat center;}
+.swiper-slide.p2{background-color: lightblue;}
+.swiper-slide.p3{background-color: lightcoral;}
+
+.swiper-pagination.mainPg{position: absolute; bottom: 265px; left: 140px; text-align: start; z-index: 100;}
+.swiper-pagination-bullet{border-radius: 0; width: 40px; height: 10px;}
+.swiper-pagination-bullet-active{background-color: green;}
+
+/* autoplay멈춤 재생 */
+.btn{display: flex; gap: 3px; 
+    position: absolute; bottom: 150px; left: 150px; z-index: 100;
+    padding: 6px 15px; border-radius: 30px;
+    background-color: rgba(0, 0, 0, .5);} 
+.btn button{width: 30px; height: 30px; cursor: pointer; font-size: 0;}
+.btn .swiper-stop{background: url(../img/main/visual_stop.png) no-repeat center/contain;}
+.btn .swiper-start{background: url(../img/main/visual_start.png) no-repeat center/contain;}
+
+
+/* adsSlide 적용 */
+.adSwiper{width: 100%;}
+.adSwiper img{width: auto; height: 50px; object-fit: contain; align-items: center;}
+    }/*tab*/
+
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media all and (max-width:750px){
+
+/* .main{width: 100%; height: 390px;}
+/* 부모의 높이값을 상속받겠다는 뜻 
+.visual{height: inherit; margin-left: 0px; 
+border-radius: 0 0 0 0px;
+background: url(../img/mob/m_slide1.jpg)
+no-repeat center/cover;
+} */
+
+.main{}
+.visual{
+margin-left: 0px; 
+border-radius: 0 0 0 0;
+height: auto
+}
+
+/* mainSwiper */
+
+.mainSwiper{
+/* 슬라이드 높이값 고정일 경우  */
+/* height:390px; */
+
+/* width값 변화에 따른 슬라이드 높이를 조정할 경우*/
+width: 100%; max-width: 750px; height: auto;
+aspect-ratio: 1 / 1;
+
+}
+
+.mainSwiper .swiper-slide{bottom: 0;}
+
+.swiper-slide.p1{background: url(../img/mob/m_slide1.jpg) no-repeat center;}
+
+
+.swiper-pagination.mainPg{position: absolute; bottom: 30px; left: 40px; text-align: start; z-index: 100;}
+.swiper-pagination-bullet{ width: 35px; height: 6px;}
+
+
+/* autoplay멈춤 재생 */
+.btn{display: none;} 
+
+
+
+}/*mob*/
