@@ -1,0 +1,47 @@
+#footer{width: 100%;background-color: #333; align-items: center; display: flex; justify-content: center; flex-direction: column;}
+
+.container1{position: relative; width: 90%; height: 15rem; margin: 6rem auto; 
+display: flex; flex-direction: column;}
+.container1>h3>a{padding:0 0 2rem 1rem;display: block;}
+.container1>ul{display: flex; gap: 1.5rem; position: absolute; left: 0; top: 70%; transform: translateY(-50%); border-top: 0.1rem solid #A0A0A0;
+padding-top: 1.3rem;}
+.container1>ul>li{color: #E0E0E0; padding-left: 0.1rem;}
+.container1>ul>li::after{content: "l"; margin-left: 0.1rem;}
+
+.call{position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+.call>ul{}
+.call>ul>li{}
+.call>ul>li>h4{font-size: 1.1rem; color: #A0A0A0;}
+.call>ul>li>span{font-size: 1.1rem; color: #A0A0A0;}
+.call>button{
+padding: 1rem 11.4rem; box-sizing: border-box; 
+background-color: #fff; cursor: pointer ;
+border-radius: 0.5rem;}
+
+.container2{display: flex; flex-direction: column;  width: 90%; height: 15rem; margin: 0 auto;  padding-bottom: 3rem;}
+.container2>h2{font-size: 1.4rem; color: #fff;}
+.line1{display: flex;}
+.line1>li{font-size: 1.1rem; color: #A0A0A0;}
+.line2{display: flex;}
+.line2>li{font-size: 1.1rem; color: #A0A0A0;}
+
+@media all and (max-width:959px){
+
+    #footer{width: 100%; background-color: #333; align-items: center; display: flex; justify-content: center; flex-direction: column;}
+.container1{position: relative; width: 90%; height: 150px; margin: 60px auto; 
+display: flex; flex-direction: column;}
+.container1>h2>a{padding:0 0 20px 10px;display: block;}
+.container1>ul{display: flex; gap: 15px; position: absolute; left: 0; top: 70%; transform: translateY(-50%); border-top: 1px solid #A0A0A0;
+padding-top: 13px; margin-bottom: 20px;}
+.container1>ul>li{color: #E0E0E0; padding-left: 10px;}
+.container1>ul>li::after{content: ""; margin-left: 10px;}
+.container1>button{position: relative; top: 20px;
+}
+
+.container2{display: flex; flex-direction: column;  width: 90%; height: 150px; margin: 0 auto;  padding-bottom: 30px;}
+.container2>h2{font-size: 14px; color: #fff;}
+.line1{display: flex;}
+.line1>li{font-size: 11px; color: #A0A0A0;}
+.line2{display: flex;}
+.line2>li{font-size: 11px; color: #A0A0A0;}
+}
