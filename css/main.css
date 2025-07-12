@@ -33,7 +33,7 @@
 background: url(../img/folder.png)no-repeat center/contain;
 width: 1100px; height: 570px;
 position: relative;}
-.folder>h2{padding: 10px 70px;}
+.folder>h2{padding: 10px 40px;}
 
 /*                       folder_F */
 article.folder_in{margin: 0 auto;
@@ -53,7 +53,7 @@ dl .proflie{display: flex; flex-direction: column; justify-content: center; alig
 background-color: #fff;
 padding: 43px 15px 15px 15px; box-sizing: border-box;
 border: 1px solid #000;}
-.proflie>.name{display: flex; gap: 25px;}
+.proflie>.name{display: flex; gap: 19px;}
 .name>h3{}
 .name>span{font-family: "Oswald", serif; font-weight: 400;
     font-size: 17px;}
