@@ -1,29 +1,117 @@
+.header{width: 100%; display: flex; position: fixed; z-index: 20; height: 140px; background-color: #fff}
+.pinkbar{width: 100%; height: 30px; background-color: #B38492; position: fixed; top: 0;}
+.header .inner1{width: 1770px; margin: 30px auto; display: flex; position: relative; height: 70%;justify-content: center;box-sizing: border-box;}
 
-#header{ position: relative; padding-top: 53px; box-sizing: border-box;
-display: flex; justify-content: space-between; align-items: center; width: 1600px; } 
+/* logo */
+.logo{position: absolute; left: 0; bottom: 10px; }
+.logo>a{}
+.logo>a>img{}
 
-/* 수정 */
-#header.on{position: fixed; top: 0; z-index: 100; width: 100%; padding: 3rem 7rem; box-sizing: border-box; 
-margin: 0 auto; display: flex; justify-content: space-between; background-color: rgba(255, 255, 255, 0.9); }
+/* gnb */
+.gnb{width: 1000px; text-align: center; position: absolute; bottom: 0;} 
+.gnb>ul{display: flex; }
+.gnb>ul>li{width: 25%; position: relative;}
+.gnb>ul>li>a{font-family: 'Pretendard-SemiBold'; font-size: 19px;line-height: 50px; display: block; position: relative;}
 
-.logo{width: 5%; height: 80px;}
-.logo>a{background: url(../img/log.png) no-repeat center/contain; display: block; width: 100%; height: 100%;}
+/* 하위메뉴 */
+ul.depth2{position: absolute; top: 60px; ; width: 100%; height: 305px;
+border-right: #ddd 1px solid; z-index: 10; display: none;
+}
+.depth2>li{}
+.depth2>li>a{font-family: 'Pretendard-SemiBold'; font-size: 17px;line-height: 40px;  display: block;}
 
-ul#gnb{display: flex;  background:url(../img/gnb_B.png)no-repeat center/contain; 
-position: absolute; right: 0; width: 1042px;}
-#gnb>li{width: 300px; text-align: center; margin-right: -53px;}
-#gnb>li>a{   font-family: "Oswald", serif;  font-weight: 400;
-font-size: 30px; line-height: 80px;
-width: 100%;}
-#gnb>li:first-child a{font-weight: 700;}
+/* button */
+.button{background-color: #B38492; border-radius: 50px; padding: 0 50px; text-align: center; position: absolute; right: 0; bottom: 10px;}
+.button button{font-family: 'Pretendard-Bold'; font-size: 18px;line-height: 50px; color: #fff;}
 
-.visual{position: relative; height: 937px;}
-.main{position: absolute; top:  0px; right: 0; width: 1042px;}
-.main>img{width: 100%;}
-.M{position: absolute;bottom: 350px; left: 0px;}
-.M>img{}
+/* gnbBg */
+.gnbBg{width: 100%; height: 305px; background-color: #fff; position: fixed; top: 140px;
+    display: none;
+}
 
-.hash{text-align: end; position: absolute;bottom: 100px; left: 0;}
-.hash>li{font-family: "Oswald", serif; font-weight: 400;
-    font-size: 50px; line-height: 70px;
-border-bottom: 1px solid #000; width: 450px;}
+/* header 스크롤시 on되게.on됐을때 헤더높이값변경 */
+/* on */
+.header.on{height: 100px; background-color: rgba(0, 0, 0, .2); }
+.header.on .gnbBg{position: fixed; top: 100px;}
+.header.on .pinkbar{display: none;}
+
+/* hover */
+.gnb>ul>li:hover>a{color: #B38492;}
+.gnb>ul>li>a::after{content: ''; display: block;
+    width: 0%; height: 5px; background-color: #B38492; 
+    position: absolute; bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+.gnb>ul>li:hover>a::after{width: calc(100% - 100px);}
+
+.depth2>li:hover>a{color: #B38492;}
+
+/* mob_gnb */
+.mob_gnb{     display: none;  }
+
+
+
+/* -------------------------------------------------------------------------------------------------------------mob */
+
+@media all and (max-width:760px){
+
+.header{ height: 61px;}
+.pinkbar{ height: 16px; position: absolute;top: 0;}
+.header .inner1{width: calc(100% - 40px); margin: 16px auto; position: absolute; bottom: 0; position: relative; padding: 5px 0; align-items: center;}
+
+/* logo */
+.logo{position: absolute; left: 0; bottom: 5px; }
+.logo>a{}
+.logo>a>img{ width: 88px; height: auto;}
+
+/* gnb */
+.gnb{display: none;} 
+
+
+/* button */
+.button{border-radius: 35px; padding: 0 19px; position: absolute; right: 50px; bottom: 5px;}
+.button button{font-size: 12px;line-height: 24px;}
+
+/* mo_allmenu */
+.mo_allmenu{position: absolute; right: 0; bottom: 5px; width: 24px; height: 24px;}
+.mo_allmenu>div{background: url(../img/all_menuicon.jpg) no-repeat center/cover; width: 100%; height: 100%;}
+
+/* mob_gnb */
+.mob_gnb{width: 312px; height: 100vh; position: absolute; right: -100%; top: 0; background-color: rgba(0, 0, 0, .2); 
+}
+.mob_button{width: 100%; height: 50px; background-color: #3E3E3E; position: relative;}
+.my{width: 60px; height: 24px; display: flex; gap: 10px; 
+position: absolute;left: 20px; top: 50%; transform: translateY(-50%);}
+.my>button{width: 24px; height: 24px;}
+.login{background: url(../img/login.png) no-repeat center/contain;}
+.sns{background: url(../img/sns.png) no-repeat center/contain;}
+.close{width: 43px; height: 43px; 
+    position: absolute; right: 20px; top: 50%; transform: translateY(-50%);}
+.close>button{background: url(../img/close.png) no-repeat center/contain; width: 100%; height: 100%;}
+
+/*mob_gnb 하위메뉴 */
+
+.mob_gnb{     display: block;  }
+
+.mob_gnb>ul{position: absolute; width: 100%; }
+.mob_gnb>ul>li{width: 100%; background-color: #fff; }
+.mob_gnb>ul>li>a{font-family: 'Pretendard-Bold'; font-size: 14px; line-height: 40px;  color: #3E3E3E; display: block;   border-bottom: #ddd 1px solid; padding:0 30px; 
+display: flex; justify-content: space-between;}
+.mob_gnb>ul>li>a::after{content: '*';}
+
+
+ul.mo_depth2{padding-top: 15px; box-sizing: border-box; display: none;}
+.mo_depth2>li{}
+.mo_depth2>li>a{font-family: 'Pretendard-Medium'; font-size: 14px; line-height: 40px;  color: #666; display: block;  padding-left: 30px; }
+ 
+
+
+/* header 스크롤시 on되게.on됐을때 헤더높이값변경 */
+/* on */
+.header.on{height: 61px;}
+
+
+}/*mob*/
