@@ -20,7 +20,7 @@ width: 100%;}
 .visual{position: relative; height: 937px;}
 .main{position: absolute; top:  0px; right: 0; width: 1042px;}
 .main>img{width: 100%;}
-.M{position: absolute;bottom: 350px; left: 0px;}
+.M{position: absolute;bottom: 350px; left: 200px;}
 .M>img{}
 
 .hash{text-align: end; position: absolute;bottom: 100px; left: 0;}

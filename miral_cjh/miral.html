@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밀알 레이아웃제작</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/header_gnb.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <!-- jquery 3총사 아래에 있으면 됨 -->
+    <script src="js/gnb.js"></script>
+    <script src="js/mo-gnb.js"></script>
+    <script src="js/aos.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">logo
+                <a href="./index.html"><img src="img/main/logo.png" alt=""></a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">재단소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">밀알나눔재단은</a></li>
+                            <li><a href="#">조직현황</a></li>
+                            <li><a href="#">투명경영</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">밀알나눔재단은</a></li>
+                            <li><a href="#">조직현황</a></li>
+                            <li><a href="#">투명경영</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">밀알나눔재단은</a></li>
+                            <li><a href="#">조직현황</a></li>
+                            <li><a href="#">투명경영</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원</a>
+                        <ul class="depth2">
+                            <li><a href="#">밀알나눔재단은</a></li>
+                            <li><a href="#">조직현황</a></li>
+                            <li><a href="#">투명경영</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 하위메뉴추가: li안에 a만 있었는데 a의 형제요소로 ul>li,a를 추가 -->
+            </nav>
+            <div class="hdBtns">
+                <a href="#"><img src="img/main/hd_login_ico.png" alt="로그인"></a>
+                <a href="#"><img src="img/main/hd-sch-btn.png" alt="검색버튼"></a>
+                <a href="#" class="slide-btn"><img src="img/main/hd_menu_ico.png" alt="메뉴버튼"></a>
+            </div>
+            <ul class="hdMenu">
+                <li><a href="#">물품후원</a></li>
+                <li><a href="#">기부금영수증</a></li>
+                <li><a href="#">온라인상담</a></li>
+            </ul>
+            <!-- 반응형 작업시 모바일 해상도에서 나타나는 모바일 버튼 추가 -->
+             <a href="#" class="moBtn"><img src="img/mob/mobBtn.png" alt=""></a>
+        </div><!--inner-->
+    </header>
+    <div class="gnbBg"></div><!--ul.depth2 bg추가-->
+    <!-- 전체메뉴 구조 추가 -->
+    <div id="drdw">
+        <div class="inner"></div>
+        <!-- .html()동적으로 넣어줄예정 영역만 처리(완) -->
+    </div>
+    <!-- 모바일 슬라이드 메뉴추가 -->
+     <div id="slide-menu">
+        <div class="tit">
+            <div class="tnb-mo">
+                <a href="#"><img src="img/mob/mo_hd_login_ico.png" alt=""></a>
+                <a href="#"><img src="img/mob/hd-sch-btn-mo.png" alt=""></a>
+            </div>
+            <a href="#" class="slide-close"><img src="img/mob/slide-close.png" alt=""></a>
+        </div><!--tit-->
+        <div class="hd-menu-mo">
+            <ul>
+                <li><a href="#">물품후원</a></li>
+                <li><a href="#">기부금영수증</a></li>
+                <li><a href="#">온라인상담</a></li>
+            </ul>
+        </div><!--hd-menu-mo-->
+        <ul id="gnb-mo">
+            <li>
+                <a href="#">재단소개</a>
+                <ul>
+                    <li><a href="#">밀알나눔재단은</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">투명경영</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">사업소개</a>
+                <ul>
+                    <li><a href="#">밀알나눔재단은</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">투명경영</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">소식</a>
+                <ul>
+                    <li><a href="#">밀알나눔재단은</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">투명경영</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">후원</a>
+                <ul>
+                    <li><a href="#">밀알나눔재단은</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">투명경영</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+        </ul>
+     </div>
+     <div class="slide-bg"></div>
+
+    <figure class="main">
+        <div class="visual">
+            <!-- 나중에슬라이드 처리(완) -->
+            <!-- Slider main container -->
+            <div class="swiper mainSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide p1"></div>
+                    <div class="swiper-slide p2"></div>
+                    <div class="swiper-slide p3"></div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination mainPg"></div>
+
+                <!-- autoplay시 재생,멈춤 버튼필요 -->
+                <div class="btn">
+                    <button class="swiper-stop">멈춤</button>
+                    <button class="swiper-start">재생</button>
+                </div>
+
+            </div><!--mainSwiper-->
+        </div>
+    </figure>
+    <div id="mainWrap">
+        <section class="mainSec01">
+            <div class="inner">
+                <dl>
+                    <dt>
+                        <div class="title">
+                            <span data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-out-cubic">story</span>
+                            <h3 data-aos="fade-right" data-aos-duration="600"  data-aos-easing="ease-out-cubic" data-aos-delay="300">기빙플러스<strong>나눔이야기</strong></h3>
+                            <img src="img/main/main_sec01_giving.png" alt="" data-aos="fade-right" data-aos-duration="600"  data-aos-easing="ease-out-cubic" data-aos-delay="500">
+                            <p data-aos="fade-right" data-aos-duration="600"  data-aos-easing="ease-out-cubic" data-aos-delay="600" >
+                                밀알나눔재단이 운영하는 친환경 나눔가게 ‘기빙플러스’는<br>
+                                기업의 사회공헌과 지역주민의 나눔 활동을 도와 친환경적 자원순환과<br>
+                                건강한 나눔 문화 확산 및 지역사회 발전에 기여합니다.
+                            </p>
+                        </div><!--title-->
+                    </dt>
+                    <dd>
+                        <img src="img/main/main_sec01_img.png" alt="" class="sec01_img">
+                        <a href="#" data-aos="zoom-in" data-aos-duration="600"  data-aos-easing="ease-out-cubic" data-aos-delay="400"><img src="img/main/main_sec01_btn.png" alt="" class="sec01_btn"></a>
+                    </dd>
+                </dl>
+            </div>
+            <aside class="txtBG">
+                <span data-aos="fade-right" data-aos-duration="600"  data-aos-easing="ease-out-cubic" data-aos-delay="800">MIRAL</span>
+            </aside>
+        </section>
+        <section class="mainSec02">
+            <div class="inner">
+                <div class="title">
+                    <span data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-out-cubic">Business</span>
+                    <h3 data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="300">밀알나눔재단<strong>주요산업</strong></h3>
+                    <p data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="500">밀알나눔재단의 주요사업을 소개합니다.</p>
+                </div><!--title-->
+                <div class="box">
+                    <dl class="box-odd">
+                        <dt>
+                            <div class="thumb bg1" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="100"  >
+                                <img src="img/main/main_sec02_numb01.png" alt="" 
+                                data-aos="zoom-in" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="400">
+                            </div>
+                            
+                        </dt>
+                        <dd><!--글자가 묶여있을떄 mid로 한번묶기-->
+                            <div class="mid">
+                                <h4 data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-out-cubic" >국내외 <strong>소외이웃지원</strong></h4>
+                                <p data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="300">다양한 위기상황으로 어려움을 겪고 있는 국내외 소외이웃에게<br>
+                                 맞춤형 지원으로 위기 극복을 돕습니다.</p>
+                                 <a href="#" class="h-btn">더알아보기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="box-even">
+                        <dt>
+                            <div class="thumb bg2" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="100" >
+                                <img src="img/main/main_sec02_numb02.png" alt=""
+                                data-aos="zoom-in" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="400">
+                            </div>
+                            
+                        </dt>
+                        <dd><!--글자가 묶여있을떄 mid로 한번묶기-->
+                            <div class="mid">
+                                <h4 data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-out-cubic" >지역공동체<strong> 친환경 나눔가게</strong></h4>
+                                <p data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="300">
+                                 친환경 나눔가게 ‘기빙플러스‘ 운영으로 친환경 자원순환을 돕고<br>
+                                 취약계층의 안정적 자립을 위한 사회적 일자리를 지원하여<br>
+                                 건강한 지역사회를 만듭니다.
+                                </p>
+                                 <a href="#" class="h-btn">더알아보기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="box-odd">
+                        <dt>
+                            <div class="thumb bg3" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="100" >
+                                <img src="img/main/main_sec02_numb03.png" alt=""
+                                data-aos="zoom-in" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="400">
+                            </div>
+                            
+                        </dt>
+                        <dd><!--글자가 묶여있을떄 mid로 한번묶기-->
+                            <div class="mid">
+                                <h4 data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-out-cubic" >지역사회 나눔<strong>네트워크</strong></h4>
+                                <p data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="300">
+                                    친환경 나눔가게 '기빙플러스'가 지역사회 내 거점이 되어<br>
+                                    다양한 나눔 활동을 진행하며 나눔 문화 활성화에 앞장섭니다..
+                                </p>
+                                 <a href="#" class="h-btn">더알아보기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="box-even">
+                        <dt>
+                            <div class="thumb bg4" data-aos="fade-up" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="100" >
+                                <img src="img/main/main_sec02_numb04.png" alt=""
+                                data-aos="zoom-in" data-aos-duration="300" data-aos-easing="ease-out-cubic" data-aos-delay="400">
+                            </div>
+                        
+                        </dt>
+                        <dd><!--글자가 묶여있을떄 mid로 한번묶기-->
+                            <div class="mid">
+                                <h4 data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-out-cubic" >취약계층 <strong>일자리 지원</strong></h4>
+                                <p data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="300">
+                                    지역사회 내 고용 취약계층에게 안정적인 일자리 제공과 더불어<br>
+                                    자립 역량 강화를 위한 다양한 프로그램을 지원하여 사회적응을<br>
+                                    돕습니다.
+                                </p>
+                                 <a href="#" class="h-btn">더알아보기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                </div><!--box-->
+            </div><!--inner-->
+        </section>
+        <section class="mainSec03">
+            <div class="inner">
+                <div class="title">
+                    <span data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-out-cubic">support</span>
+                    <h3 data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="300">따뜻한 변화에 함께 동참해주세요</h3>
+                    <p data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-delay="500">활동에 동참하여 소외된 이웃에게 희망을 나눠주세요.</p>
+                    <div class="btns">
+                        <a href="#" data-aos="fade-up-left" data-aos-easing="ease-out-cubic" data-aos-delay="300">물품후원하기</a>
+                        <a href="#" data-aos="fade-up-left" data-aos-easing="ease-out-cubic" data-aos-delay="400">기부금영수증</a>
+                    </div>
+                </div><!--title-->
+                <ul class="sp-box">
+                    <li>
+                        <a href="#"></a>
+                        <div class="sp-mid">
+                            <img src="img/main/main_sec03_ico01.png" alt="">
+                            <h5>정기·일시 후원</h5>
+                            <p>월 정기후원이나 일회성 후원이
+                                가능합니다.</p>
+                            <a href="#" class="sp-btn">후원하기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <div class="sp-mid">
+                            <img src="img/main/main_sec03_ico02.png" alt="">
+                            <h5>기업후원</h5>
+                            <p>기업과 파트너십을 통해
+                                사회적 문제를 함께 해결합니다.</p>
+                            <a href="#" class="sp-btn">후원하기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                        <div class="sp-mid">
+                            <img src="img/main/main_sec03_ico03.png" alt="">
+                            <h5>캠페인 후원</h5>
+                            <p>밀알나눔재단의 다양한 캠페인을 통해
+                                후원해 주세요.</p>
+                            <a href="#" class="sp-btn">후원하기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div><!--inner-->
+        </section>
+        <section class="mainSec04">
+            <div class="inner">
+                <div class="title">
+                    <h3 data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-cubic">밀알소식</h3>
+                    <p data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-cubic" data-aos-delay="300">밀알나눔재단의 새로운 소식을 전합니다.</p>
+                </div><!--title-->
+                <div class="wrap">
+                    <div class="left">
+                        <div class="tit">
+                            <h5>공지사항</h5>
+                            <a href="#"><img src="img/main/main_sec_more.png" alt=""></a>
+                        </div>
+                        <ul class="notice-list">
+                            <li>
+                                <a href="#">
+                                    <h6>재단법인 기빙플러스 개인정보처리방침 및 이용약관재단법인 기빙플러스 개인정보처리방침 및 이용약관</h6>
+                                    <span>2024.08.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h6>밀알복지재단, 기업 초청해 장애인 인식개선 교육 펼친다</h6>
+                                    <span>2024.08.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h6>밀알복지재단, 3월 5일 ‘직장 내 장애인 인식개선’ 기업 초청 공연</h6>
+                                    <span>2024.08.01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--left-->
+                    <div class="right">
+                        <div class="tit">
+                            <h5>언론보도</h5>
+                            <a href="#"><img src="img/main/main_sec_more.png" alt=""></a>
+                        </div>
+                        <ul class="notice-list">
+                            <li>
+                                <a href="#">
+                                    <h6>밀알복지재단, 안심가로등 플러스 전국 공모 개시</h6>
+                                    <span>2024.08.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h6>고남교회, 농촌 고령화 해법 제시… ‘고남밀알의집’ 설립 주도</h6>
+                                    <span>2024.08.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h6>밀알복지재단, 농촌형 공동생활가정 ‘고남밀알의집’ 개원</h6>
+                                    <span>2024.08.01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--right-->
+                </div><!--wrap-->
+            </div><!--inner-->
+        </section>
+        <section class="mainSec05">
+            <!--adsSlide 적용-->
+            <!-- Slider main container -->
+            <div class="swiper adSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide ad1"><img src="img/main/ad1.jpg" alt=""></div>
+                    <div class="swiper-slide ad2"><img src="img/main/ad2.png" alt=""></div>
+                    <div class="swiper-slide ad3"><img src="img/main/ad3.png" alt=""></div>
+                    <div class="swiper-slide ad4"><img src="img/main/ad4.png" alt=""></div>
+                    <div class="swiper-slide ad5"><img src="img/main/ad5.png" alt=""></div>
+                    <div class="swiper-slide ad6"><img src="img/main/ad6.png" alt=""></div>
+                    <div class="swiper-slide ad7"><img src="img/main/ad7.png" alt=""></div>
+                    <div class="swiper-slide ad8"><img src="img/main/ad8.png" alt=""></div>
+        
+                </div>
+            </div>
+        
+        
+        
+        
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="inner">
+            <ul class="fnb">
+                <li><a href="#">재단 소개</a></li>
+                <li><a href="#">기빙플러스 소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+            <div class="f-fam"><a href="#">Family site</a>
+            <ul>
+                <li><a href="#">밀알복지재단</a></li>
+                <li><a href="#">복지플러스</a></li>
+            </ul>
+        </div><!--f-fam-->
+        </div><!--inner-->
+    </footer>
+    <script>
+        AOS.init();
+
+        //
+
+        const swiper1 = new Swiper('.mainSwiper', {
+            // Optional parameters
+
+            //autoplay
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.mainPg',
+                clickable: true,
+            },
+
+        });
+
+        // swiper 재생,멈춤 click이벤트
+        $('.swiper-stop').click(function(){
+            swiper1.autoplay.stop();
+            //swiper와 jquery함께 쓸수있다.
+        });
+
+        $('.swiper-start').click(function(){
+            swiper1.autoplay.start();
+            
+        });
+
+        //
+
+            const swiper2 = new Swiper('.adSwiper', {
+                // Optional parameters
+                //direction: 'vertical',
+                loop: true,
+                slidesPerView: 6,
+                spaceBetween: 20,
+                swiPerGroup: 1,
+                
+                //6개를 하나의 그룹으로 묶어줌
+
+                //autoplay
+                spaceBetween: 30,
+                centeredSlides: true,
+                speed:2000,
+                autoplay: {
+
+                    delay: 0,
+                    disableOnInteraction: false,
+                    cssMode: false,         //  // CSS 스크롤 비활성화
+                    freeMode: false,         // 슬라이드가 자유롭게 계속 흘러가도록
+                    freeModeMomentum: false, // 슬라이드가 자연스러운
+                    
+                },
+
+                
+
+                breakpoints: {
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    750: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 20,
+                    },
+                },       
+
+
+
+            });
+    </script>
+</body>
+</html> 

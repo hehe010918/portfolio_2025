@@ -1,0 +1,123 @@
+@import url(../font/font.css);
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+  }
+  
+  audio, canvas, progress, video {
+    display: inline-block;
+  }
+  
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  
+  [hidden], template {
+    display: none;
+  }
+  
+  html {
+    box-sizing: border-box;
+   font-size: 62.5%; /*1rem=10px로통일(기본 16px 기준에서 62.5%로 설정해 놓으면 16px의 62%인 10px이 된다.)
+   */
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'SpoqaHanSansNeo-Regular'; /* Coloso에 맞춰 기본 서체 설정 */
+    font-size: 1.6rem; /* 기본 16px 설정 */
+    line-height: 1.6;
+    background-color: #fff;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, span, strong, em, div {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    display: block;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  button, input, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  
+  iframe {
+    border: 0;
+  }
+  
+  /* Prevent large and small font scaling in all browsers */
+  small {
+    font-size: 80%;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: inherit;
+  }
+  
+  ::placeholder {
+    color: inherit;
+  }
+  
+  /* Remove focus outline in non-keyboard interactions */
+  *:focus:not(:focus-visible) {
+    outline: 0;
+  }
+  

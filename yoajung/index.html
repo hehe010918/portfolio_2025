@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yoajong</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font/pretendard.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/section.css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/fullpage.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="pinkbar"></div>
+        <div class="inner1">
+            <h1 class="logo"><a href="./index.html"><img src="img/header_01.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ul class="depth2">
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">ABOUT요아정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴&메장</a>
+                        <ul class="depth2"  >
+                            <li><a href="#">전체메뉴</a></li>
+                            <li><a href="#">메장찾기</a></li>
+                            <li><a href="#">성분분석 및 알레르기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">멤버쉽</a>
+                        <ul class="depth2">
+                            <li><a href="#">요아정 APP소개</a></li>
+                            <li><a href="#">멤버쉽 해택</a></li>
+                            <li><a href="#">요아정 오더</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">고객의 소리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="gnbBg"></div>
+            <div class="button">
+                <button>가맹문의</button>
+            </div>
+
+            <!-- 모바일 추가구조 -->
+
+            <div class="mo_allmenu">
+                <div></div>
+            </div>
+
+
+        </div><!--inner-->
+
+
+        <!-- 모바일 전체메뉴 구조 -->
+        <div class="mob_gnb">
+            <div class="mob_button">
+                <div class="my">
+                    <button class="login"></button>
+                    <button class="sns"></button>
+                </div>
+                <div class="close">
+                    <button></button>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">브랜드</a>
+                    <ul class="mo_depth2">
+                        <li><a href="#">브랜드소개</a></li>
+                        <li><a href="#">ABOUT요아정</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">매장&메뉴</a>
+                    <ul class="mo_depth2">
+                        <li><a href="#">전체메뉴</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">성분분석 및 알레르기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">멤버쉽</a>
+                    <ul class="mo_depth2">
+                        <li><a href="#">요아정 APP소개</a></li>
+                        <li><a href="#">멤버쉽 해택</a></li>
+                        <li><a href="#">요아정 오더</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="mo_depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+    <div id="fullpage">
+
+        <div class="section main">
+            <!-- Slider main container -->
+            <div class="swiper mainslide">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide main1"></div>
+                    <div class="swiper-slide main2"></div>
+                    <div class="swiper-slide main3"></div>
+                </div>
+
+
+            </div>
+            
+            <div class="pg">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="section sec1">
+            <div class="inner">
+                <h2 class="title">꿀조합 추천</h2>
+                <!-- Slider main container -->
+                <div class="swiper sec1slide on">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="bg bg1">
+                                                <img src="img/sec1-bg1.png" alt="하트배경">
+                                            </div>
+                                            <div class="itemImg img1">
+                                                <img src="img/item1.png" alt="제품이미지">
+                                            </div>
+                                        </div>
+
+                                        <ul class="item_txt">
+                                            <li>
+                                                <div class="titWrap">
+                                                    <h3>비타민 충전</h3>
+                                                    <img src="img/item1-icon.jpg" alt="lemon">
+                                                </div>
+                                                <span>blueBar</span>
+                                                <p>새콤달콤한 조합으로<br>
+                                                    오늘하루 비타민 충전 하세요!</p>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="bg bg2">
+                                                <img src="img/sec1-bg2.png" alt="">
+                                            </div>
+                                            <div class="itemImg img2">
+                                                <img src="img/item2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <ul class="item_txt">
+                                            <li>
+                                                <div class="titWrap">
+                                                    <h3>시그니처</h3>
+                                                    <img src="img/item2-icon.jpg" alt="lemon">
+                                                </div>
+                                                <span>blueBar</span>
+                                                <p>모두가 좋아할만한 요아정의<br>
+                                                    시그니처</p>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="bg bg3">
+                                                <img src="img/sec1-bg3.png" alt="">
+                                            </div>
+                                            <div class="itemImg img3">
+                                                <img src="img/item3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <ul class="item_txt">
+                                            <li>
+                                                <div class="titWrap">
+                                                    <h3>초코폭탄</h3>
+                                                    <img src="img/item3-icon.jpg" alt="lemon">
+                                                </div>
+                                                <span>blueBar</span>
+                                                <p>당 떨어지는 날엔 초코폭탄 조합</p>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="bg bg4">
+                                                <img src="img/sec1-bg4.png" alt="">
+                                            </div>
+                                            <div class="itemImg img4">
+                                                <img src="img/item4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <ul class="item_txt">
+                                            <li>
+                                                <div class="titWrap">
+                                                    <h3>가벼운 당충전</h3>
+                                                    <img src="img/item4-icon.jpg" alt="lemon">
+                                                </div>
+                                                <span>blueBar</span>
+                                                <p>다이어트 중에 달달한게 땡길때</p>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+        
+
+        
+                    <!-- If we need scrollbar   
+                    <div class="swiper-scrollbar"></div>-->
+                </div>
+                <div class="arrowWrap">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="button2">
+                    <button>전체메뉴 보러가기</button>
+                </div>
+            </div><!--inner-->
+        </div><!--sec1-->
+        <div class="section sec2 ">
+            <div class="inner">
+                <h2 class="title">카테고리별 토핑</h2>
+                <ul class="topping">
+                    <li class="on">
+                        <a href="#">과일</a>
+                        <!-- Slider main container -->
+                        <div class="swiper sec2slide  sec2slide1 on">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="menu on">
+                                <h4 class="menuName">블루베리</h4>
+                                <div class="imgBox">
+                                    <div class="imgBox menuImg1"></div>
+                                </div>
+                                <div class="txtBox">
+                                    <p>50g</p>
+                                    <p>27kcal</p>
+                                </div>
+                                <div class="bullet">
+                                    <span class="new">new</span>
+                                    <span class="best">best</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu">
+                                <h4 class="menuName">골든키위</h4>
+                                <div class="imgBox">
+                                    <div class="imgBox menuImg2"></div>
+                                </div>
+                                <div class="txtBox">
+                                    <p>83g</p>
+                                    <p>44kcal</p>
+                                </div>
+                                <div class="bullet">
+                                    <span class="new">new</span>
+                                    <span class="best">best</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu">
+                                <h4 class="menuName">자몽</h4>
+                                <div class="imgBox">
+                                    <div class="imgBox menuImg3"></div>
+                                </div>
+                                <div class="txtBox">
+                                    <p>100g</p>
+                                    <p>44kcal</p>
+                                </div>
+                                <div class="bullet">
+                                    <span class="new">new</span>
+                                    <span class="best">best</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu">
+                                <h4 class="menuName">멜론</h4>
+                                <div class="imgBox">
+                                    <div class="imgBox menuImg4"></div>
+                                </div>
+                                <div class="txtBox">
+                                    <p>100g</p>
+                                    <p>46kcal</p>
+                                </div>
+                                <div class="bullet">
+                                    <span class="new">new</span>
+                                    <span class="best">best</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu">
+                                <h4 class="menuName">파인애플</h4>
+                                <div class="imgBox">
+                                    <div class="imgBox menuImg5"></div>
+                                </div>
+                                <div class="txtBox">
+                                    <p>100g</p>
+                                    <p>48kcal</p>
+                                </div>
+                                <div class="bullet">
+                                    <span class="new">new</span>
+                                    <span class="best">best</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu">
+                                <h4 class="menuName">딸기</h4>
+                                <div class="imgBox">
+                                    <div class="imgBox menuImg6"></div>
+                                </div>
+                                <div class="txtBox">
+                                    <p>100g</p>
+                                    <p>32kcal</p>
+                                </div>
+                                <div class="bullet">
+                                    <span class="new">new</span>
+                                    <span class="best">best</span>
+                                </div>
+                            </div>
+                        </div>
+                            </div>        
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">초코</a>
+                        <!-- Slider main container -->
+                        <div class="swiper sec2slide sec2slide2">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">오레오 쿠키</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg1"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>21g</p>
+                                            <p>105kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">미쯔</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg2"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>146kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">초코룹스</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg3"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>40g</p>
+                                            <p>195kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">이색토핑</a>
+                        <!-- Slider main container -->
+                        <div class="swiper sec2slide sec2slide3">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">팝핑보바(망고)</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg1"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>50g</p>
+                                            <p>50kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">팝핑보바(딸기)</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg2"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>50g</p>
+                                            <p>50kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">팝핑보바(리치)</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg3"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>50g</p>
+                                            <p>50kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">멜로팝</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg4"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>15g</p>
+                                            <p>59kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">달고나팝팝</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg5"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>20g</p>
+                                            <p>79kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">시리얼</a>
+                        <!-- Slider main container -->
+                        <div class="swiper sec2slide sec2slide4">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">후르츠링</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg1"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>117kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">콘푸로스트</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg2"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>116kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">코코볼</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg3"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>118kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">견과류</a>
+                        <!-- Slider main container -->
+                        <div class="swiper sec2slide sec2slide5">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">아몬드</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg1"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>117kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">코코넛 청크</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg2"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>116kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">호두</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg3"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>118kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">소스</a>
+                        <!-- Slider main container -->
+                        <div class="swiper sec2slide sec2slide6">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">카라멜소스</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg1"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>87kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">연유</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg2"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>102kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu">
+                                        <h4 class="menuName">벌꿀</h4>
+                                        <div class="imgBox">
+                                            <div class="imgBox menuImg3"></div>
+                                        </div>
+                                        <div class="txtBox">
+                                            <p>30g</p>
+                                            <p>91kcal</p>
+                                        </div>
+                                        <div class="bullet">
+                                            <span class="new">new</span>
+                                            <span class="best">best</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </li>
+                </ul>
+
+        
+                <div class="arrowWrap">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="button2">
+                    <button>영양성분 보러가기</button>
+                </div>
+            </div><!--inner-->
+        </div><!--sec2-->
+        <div class="section sec3">
+            <div class="txtWrap">
+                <h5>" EAT FRESH<br>EAT HEALTHY "</h5>
+                <p>요아정은 “EAT FRESH, EAT HEALTHY”라는 모토 아래<br>맛과 건강을 모두 갖춘 건강한 디저트라는 컨셉으로<br>요거트 시장 NO.1 자리를 지켜갑니다.</p>
+                <div class="button2">
+                    <button>브랜드스토리 보러가기</button>
+                </div>
+            </div>
+            <div class="brand1">
+                <img src="img/footer_01.png" alt="yellowLogo">
+            </div>
+            <div class="brand2"></div>
+        </div>
+        <div class="section sec4">
+            <div class="inner">
+                <h2 class="title">VIDEO</h2>
+                <dl>
+                    <dt class="video">
+                        <div class="thumb thumb1 on">
+                            <button>play</button>
+                        </div>
+                        <div class="thumb thumb2">
+                            <button>play</button>
+                        </div>
+                    </dt>
+                    <dd>
+                        <div class="titbox">
+                            <div class="thumbwrap thumb1wrap on">
+                                <h6>
+                                    <i>요</i>
+                                    아정<br>소리를<br>들어봐
+                                    <i>요!</i>
+                                </h6>
+                                <p>톡톡 바삭바삭 언제들어도 맛있는 소리!</p>
+                            </div>
+                            <div class="thumbwrap thumb2wrap">
+                                <h6>
+                                    <i>요</i>
+                                    아정<br>이렇게<br>먹어봐
+                                    <i>요!</i>
+                                </h6>
+                                <p>5억밈의 주인공 라이즈 성찬이 픽한 요아정을 소개합니다.</p>
+                            </div>
+                        </div>
+                        <div class="wonbutton">
+                            <div class="videoTum on">
+                                <button class="vid1"></button>
+                            </div>
+                            <div class="videoTum">
+                                <button class="vid2"></button>
+                            </div>
+                        </div>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="sec4Bg"></div>
+        </div>
+        <div class="section sec5">
+            <div class="inner">
+                <h2 class="title">MORE YOAJONG</h2>
+                <div class="morewrap">
+                    <div class="more1">
+                        <div class="txt_more">
+                             <h3>가까운 매장찾기</h3>
+                             <span>내 주변 가까운 요아정은 어디? </span>
+                             <div class="input">
+                                <input type="text">
+                                <button class="sch"></button>
+                            </div>
+                        </div>
+                        <div class="img_more">
+                            <div></div>
+                        </div>
+                    </div><!--more1-->
+                    <div class="more2">
+                        <div class="txt_more">
+                            <h3>요아정 모바일 앱 </h3>
+                            <span>신규가입시 4,000원 쿠폰 증정!</span>
+                            <div class="web">
+                               <button class="mem">앱으로 이동하기</button>
+                           </div>
+                       </div>
+                       <div class="img_more">
+                           <div></div>
+                       </div>
+                    </div>
+                </div><!--morewrap-->
+            </div><!--inner-->
+            <footer class="footer">
+                <div class="footerimg"></div>
+                <div class="footertxt">
+                    <span>주식회사 요아정</span>
+                    <span>대표자 허준영</span>
+                    <span>사업자번호 696-86-02195 </span>
+                    <span>주소 서울특별시 성동구 아차산로 17길 48 1703-5호</span>
+                    <span>제휴문의 awesomebrosis@naver.com</span>
+                    <span>CS문의 cs@yoajung.co.kr</span>
+                    <span>Copyright ⓒ 요거트아이스크림의정석. all Rights Reserved.</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.main_visual{height: 460px; background-color: #444; position: relative;}
+
+.swiper{width: 100%; height: 460px;}
+.pic1{background: url(../img/main1.png) no-repeat center/cover;}
+.pic2{background: url(../img/main2.png) no-repeat center/cover;}
+.pic3{background: url(../img/main3.png) no-repeat center/cover;}
+.pic4{background: url(../img/main4.png) no-repeat center/cover;}
+
+.btnWrap{width: 165px; height: 34px;  position: absolute; bottom: 30px; left: 20%; z-index: 10;}
+
+.mainSwiper .swiper-button-prev::after,
+.mainSwiper .swiper-button-next::after{color: #fff; font-size: 13px;}
+
+.mainSwiper .swiper-button-prev,
+.mainSwiper .swiper-button-next{top: 0; margin-top: 0;}
+/* 초기화시켜줌  부모박스에 딱붙게*/
+
+.mainSwiper .swiper-button-prev{left: 0;}
+.mainSwiper .swiper-button-next{right: 0;}
+
+.arrow{width: 34px; height: 34px; background-color:rgba(54, 55, 59, .5) ; border-radius: 20px; transition: all 1s;}
+.arrow:hover{background-color: rgb(54, 55, 59);}
+
+.mainSwiper .swiper-pagination{top: 0; margin-top: 0;
+    /* 중앙정렬하기 */
+    left: 50%; transform: translateX(-50%); }
+
+.number{width: 77px; height: 34px; border-radius: 17px; background-color: #36373B; color: #fff; align-items: center; display: flex; justify-content: space-between;
+padding: 0 24px; box-sizing: border-box; 
+}
+
+.mainSwiper .swiper-pagination span{font-size: 14px;
+    font-family: 'Spoqa-Regular';}
+
+
+    /* 매일배송페이지 추천슬라이드 */
+.Sec02 .inner{position: relative;}
+.Sec02 .inner>ul{display: flex; text-align: center; gap: 10px; position: absolute; right: 0; margin-top: 10px;}
+.Sec02 .inner>ul>li{ display: flex; gap: 10px;}
+.Sec02 .inner .home::after{content: '>';}   
+.Sec02 .inner>ul>li>a{display: block; font-style: bold;}
+
+.Sec02 .tit{margin: 42px 0 22px;}
+
+.slideBox{position: relative;}
+.productSlide{}
+.product>div>a{display: block; background-color: #36373B;}
+.product-arrow{width: calc(100% + 100px); height: 40px; 
+    position: absolute; bottom: 50%; left: 50%; transform: translate(-50%, -50%);  z-index: 11;}
+
+.product_prev:after, .product_next:after{content: '';}
+.product_prev, .product_next{background: url(../img/arrow_best.png) no-repeat center/contain; width: 15px; height: 30px;}
+.product_next{transform: rotate(180deg);}
+
+.product-pg{ width: 100%;  position: absolute; bottom: -50px;}
+.pg{margin-bottom: 30px;}
+.pg .swiper-pagination-bullet-active{background-color:#86C852; width: 15px;border-radius: 30px;}
+.swiper-pagination-bullet{}
+
+.daliy-product{height: 400px;}
+.daliy-product .inner{}
+.daliy-product ul{}
+.daliy-product ul>.sarp{display: flex; gap: 5px; justify-content: space-between;}
+.sarp button{background-color: #86C852; line-height: 30px; border-radius: 30px; width: 150px;  font-size: 15px;}

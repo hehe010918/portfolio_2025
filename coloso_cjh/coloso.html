@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coloso</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle copy.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+
+</head>
+<body>
+    <header id="header"><!--헤더는 하나라서 id주는 경우많음-->
+        <div class="h_top h_inner">
+            <h1 class="logo">
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </h1>
+            <form action="" class="search_btn">
+                <i><img src="img/search.svg" alt="검색아이콘"></i>
+                <input type="text" class="search_input" placeholder="어떤강의를찾으시나요">
+            </form>
+            <ul class="h_icon_wrap">
+                <li>
+                    <a href="#">
+                        <i><img src="img/cart.svg" alt=""></i>
+                        <span>장바구니</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+            </ul>
+            <div class="mo-wrap"><!--모바일일때 나타남-->
+                <ul class="mo-ic-wrap">
+                    <li><a href="#"><img src="img/mSearch.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/mCart.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/mMenu.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="h_bottom h_inner">
+            <a href="#" class="all_menu">
+                <i><img src="img/menu.svg" alt=""></i>
+                <strong>카테고리</strong>
+            </a>
+            <ul class="gnb"> <!-- li*10>a[href='#'] -->
+                <li><a href="#">홈</a></li>
+                <li><a href="#">하나 고르면 하나 공짜</a></li>
+                <li><a href="#">New!Snack</a></li>
+                <li><a href="#">추천인이벤트</a></li>
+                <li><a href="#">웰컴해택</a></li>
+                <li><a href="#">BEST</a></li>
+                <li><a href="#">무료특강</a></li>
+                <li><a href="#">평생교육</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">신규클래스</a></li>
+                <li><a href="#">#그게뭔데</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <figure id="visual">
+        <!-- Slider main container -->
+        <div class="swiper mainslide">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide p1">
+                    <!-- 반응형 페럴렉스 걸어주는 이미지 (부엉이역할) -->
+                    <div class="thumb" 
+                    data-swiper-parallax="-3%" data-swiper-parallax-duration="3000"
+                    data-swiper-parallax-opacity="0">
+                        <picture>
+                            <!-- 경로지원해주지 않아 스펠링 유의  -->
+                            <source media="(min-width:960px)" srcset="img/main1-bigbanner-web.webp">
+                            <source media="(max-width:959px)"
+                            srcset="img/main1-bigbanner-mob.webp">
+                            <img src="img/main1-bigbanner-web.webp" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="swiper-slide p2">
+                    <div class="thumb"
+                    data-swiper-parallax="-3%" data-swiper-parallax-duration="3000"
+                    data-swiper-parallax-opacity="0">
+                        <picture>
+                        <source media="(min-width:960px)"
+                        srcset="img/main2-bigbanner-web.webp">
+                        <source media="(max-width:959px)"
+                        srcset="img/main2-bigbanner-mob.webp">
+                        <img src="img/main2-bigbanner-web.webp" alt="">
+                    </picture>
+                    </div>
+                </div>
+                <div class="swiper-slide p3">
+                    <div class="thumb"
+                    data-swiper-parallax="-3%" data-swiper-parallax-duration="3000"
+                    data-swiper-parallax-opacity="0">
+                    <picture>
+                        <source media="(min-width:960px)"
+                        srcset="img/main3-bigbanner-web.webp">
+                        <source media="(max-width:959px)"
+                        srcset="img/main3-bigbanner-mob.webp">
+                        <img src="img/main3-bigbanner-web.webp" alt="">
+                    </picture>
+                    </div>
+                </div>
+            </div><!--swiper-wrapper-->
+            
+            <div class="controler">
+                <div class="controllBar">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev mainprev"></div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination mainPg"></div>
+                    <div class="swiper-button-next mainnext"></div>
+            
+                </div>
+                <!-- 프로그레스바 추가 -->
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div><!--swiper mainslide-->
+    </figure>
+    <script>
+            const swiper1 = new Swiper('.mainslide', {
+                // Optional parameters
+                //direction: 'vertical',
+                //loop: true,
+                //speed: 600,
+                parallax: true,
+                effect: "fade",
+
+                //spaceBetween: 30,
+                //centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+
+                // If we need pagination
+                pagination: {
+                    el: '.mainPg',
+                    type: "fraction",
+
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.mainnext',
+                    prevEl: '.mainprev',
+                },
+                //on메서드가 들어가면  function터진다
+                on: {
+                    slideChangeTransitionStart:function(){
+                        progressBar();
+
+                }
+            },
+
+            });
+
+            //진행바 에니메이션
+            function progressBar(){
+                var progressBar = document.querySelector('.progress');
+
+                //함수가 터지면은 .progress가 0%로
+                progressBar.style.transition = 'none';
+                progressBar.style.width = '0%';
+
+                setTimeout(() => {
+                    progressBar.style.transition = 'width 3s';
+                    progressBar.style.width = '100%';
+                },500);
+            }
+            
+            progressBar();
+    </script>
+    <nav class="quick_link">
+        <div class="quick_wrap">
+            <a href="#" class="quick_item">
+                <span><img src="img/ic1.png" alt="" class="event"></span>
+                <h4>하나공짜</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic1.png" alt=""  class="event"></span>
+                <h4>이벤트</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic3.png" alt=""></span>
+                <h4>포트폴리오</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic4.png" alt=""></span>
+                <h4>로드맵</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic5.png" alt=""></span>
+                <h4>Snack</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic2.png" alt=""></span>
+                <h4>BEST</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic3.png" alt=""></span>
+                <h4>콜로소에셋</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic4.png" alt=""></span>
+                <h4>시그니처</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic2.png" alt=""></span>
+                <h4>기업교육</h4>
+            </a>
+            <a href="#" class="quick_item">
+                <span><img src="img/ic5.png" alt=""></span>
+                <h4>얼리버드특가</h4>
+            </a>
+        </div>
+    </nav>
+    <main class="main"><!--nav같은 시멘틱태그 div.main같은것-->
+        <section class="sec1">
+            <div class="inner">
+                <div class="top10-wrap"><!--화살표버튼을 위한 부모-->
+                    <h2 class="title">오늘의 TOP10</h2>
+                    <!-- Slider main container -->
+                    <div class="swiper top10slide">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <li>
+                                    <figure class="card">
+                                        <a href="#" class="card-link"><!--전체영역이  링크-->
+                                            <img src="img/cardImg01.webp" alt="">
+                                            <div class="card-caption">
+                                                <ul class="card-labels">
+                                                    <li class="c-btn1">10.23 오픈</li>
+                                                    <li class="c-btn2">UI/UX</li>
+                                                </ul>
+                                                <strong class="card-title">드로잉 슬럼프 극복을 위한 캐주얼 일러스트
+                                                    비법노트</strong>
+                                                <span class="card-note">일러스트레이터 마끼아또</span>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li>
+                                    <figure class="card">
+                                        <a href="#" class="card-link"><!--전체영역이  링크-->
+                                            <img src="img/cardImg02.jpg" alt="">
+                                            <div class="card-caption">
+                                                <ul class="card-labels">
+                                                    <li class="c-btn1">수강가능</li>
+                                                    <li class="c-btn2">제과</li>
+                                                </ul>
+                                                <strong class="card-title">생화처럼 고급스러운 앙금 플라워 디저트, 꽃강정</strong>
+                                                <span class="card-note">스윗로즈 대표 박예원</span>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li>
+                                    <figure class="card">
+                                        <a href="#" class="card-link"><!--전체영역이  링크-->
+                                            <img src="img/cardimg03.jpg" alt="">
+                                            <div class="card-caption">
+                                                <ul class="card-labels">
+                                                    <li class="c-btn1">01.31 오픈</li>
+                                                    <li class="c-btn2">에니메이션</li>
+                                                </ul>
+                                                <strong class="card-title">메이저 애니메이션 진출을 위한 액션 포트폴리오
+                                                    완성</strong>
+                                                <span class="card-note">애니메이터 BS KIM</span>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li>
+                                    <figure class="card">
+                                        <a href="#" class="card-link"><!--전체영역이  링크-->
+                                            <img src="img/cardimg04.jpg" alt="">
+                                            <div class="card-caption">
+                                                <ul class="card-labels">
+                                                    <li class="c-btn1">01.03 오픈</li>
+                                                    <li class="c-btn2 hidden">게임기획</li>
+                                                </ul>
+                                                <strong class="card-title">포트폴리오부터 면접까지 완벽하게, 게임 기획
+                                                    취업 올인원 코스</strong>
+                                                <span class="card-note">게임 기획자 유리링</span>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li>
+                                    <figure class="card">
+                                        <a href="#" class="card-link"><!--전체영역이  링크-->
+                                            <img src="img/cardimg05.jpg" alt="">
+                                            <div class="card-caption">
+                                                <ul class="card-labels">
+                                                    <li class="c-btn1">12.31 오픈</li>
+                                                    <li class="c-btn2 hidden">UI/UX</li>
+                                                </ul>
+                                                <strong class="card-title">상상했던 느낌 그대로, 실패 없이 쌓는 고밀도 채색
+                                                    오답노트</strong>
+                                                <span class="card-note">애니메이터 예찌</span>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li>
+                                    <figure class="card">
+                                        <a href="#" class="card-link"><!--전체영역이  링크-->
+                                            <img src="img/cardimg07.jpg" alt="">
+                                            <div class="card-caption">
+                                                <ul class="card-labels">
+                                                    <li class="c-btn1">10.23 오픈</li>
+                                                    <li class="c-btn2 hidden">UI/UX</li>
+                                                </ul>
+                                                <strong class="card-title">어떤 각도에서든 극강의 자연스러움, 생생한 인체
+                                                    드로잉 입문</strong>
+                                                <span class="card-note">일러스트레이터 hide</span>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </div>
+                            <div class="swiper-slide">
+                                <li>
+                                    <figure class="card">
+                                        <a href="#" class="card-link"><!--전체영역이  링크-->
+                                            <img src="img/cardimg04.jpg" alt="">
+                                            <div class="card-caption">
+                                                <ul class="card-labels">
+                                                    <li class="c-btn1">12.30 오픈</li>
+                                                    <li class="c-btn2 ">UI/UX</li>
+                                                </ul>
+                                                <strong class="card-title">포트폴리오부터 면접까지 완벽하게, 게임 기획
+                                                    취업 올인원 코스</strong>
+                                                <span class="card-note">게임 기획자 유리링</span>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </li>
+                            </div>
+                        </div>
+
+
+
+                    
+                    </div><!--top10swiper-->
+
+                    <div class="arrow">
+                        <!-- If we need navigation buttons -->
+                        <div class= "swiper-button-prev topPrev"></div>
+                        <div class="swiper-button-next topNext"></div>
+                    </div>
+
+                    <script>
+                        const swiper2 = new Swiper('.top10slide', {
+                            // Optional parameters
+                            //direction: 'vertical',
+                            loop: true,
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+
+                            // Navigation arrows    
+                            navigation: {
+                                nextEl: '.topNext',
+                                prevEl: '.topPrev',
+                            },
+
+                            breakpoints: {
+
+                                767: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30,
+                                },
+                                480: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                },
+                            },
+
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section class="sec2">
+            <div class="inner">
+                <div class="new-warp">
+                    <h2 class="title">얼리버드 신규 오픈 클래스</h2>
+                    <ul class="new-list">
+                        <li>
+                            <figure class="card">
+                                <a href="#" class="card-link"><!--전체영역이  링크-->
+                                    <img src="img/sec2img01.webp" alt="">
+                                    <div class="card-caption">
+                                        <ul class="card-labels">
+                                            <li class="c-btn3">NEW</li>
+                                            <li class="c-btn1">수강가능</li>
+                                        </ul>
+                                        <strong class="card-title">상상했던 느낌 그대로, 실패 없이 쌓는 고밀도 채색
+                                            오답노트</strong>
+                                        <span class="card-note">애니메이터 예찌</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="card">
+                                <a href="#" class="card-link"><!--전체영역이  링크-->
+                                    <img src="img/cardimg07.jpg" alt="">
+                                    <div class="card-caption">
+                                        <ul class="card-labels">
+                                            <li class="c-btn3">10.23 오픈</li>
+                                            <li class="c-btn2">UI/UX</li>
+                                        </ul>
+                                        <strong class="card-title">어떤 각도에서든 극강의 자연스러움, 생생한 인체
+                                            드로잉 입문</strong>
+                                        <span class="card-note">일러스트레이터 hide</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="card">
+                                <a href="#" class="card-link"><!--전체영역이  링크-->
+                                    <img src="img/cardimg04.jpg" alt="">
+                                    <div class="card-caption">
+                                        <ul class="card-labels">
+                                            <li class="c-btn1 hidden">10.23 오픈</li>
+                                            <li class="c-btn2">UI/UX</li>
+                                        </ul>
+                                        <strong class="card-title">포트폴리오부터 면접까지 완벽하게, 게임 기획
+                                            취업 올인원 코스</strong>
+                                        <span class="card-note">게임 기획자 유리링</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--inner-->
+        </section>
+        <section class="sec3">
+            <div class="inner">
+                <div class="new-warp">
+                    <h2 class="title">드로잉 클래스</h2>
+                    <ul class="new-list class-list">
+                        <li>
+                            <figure class="card">
+                                <a href="#" class="card-link"><!--전체영역이  링크-->
+                                    <img src="img/Dimg1.webp" alt="">
+                                    <div class="card-caption">
+                                        <ul class="card-labels">
+                                            <li class="c-btn3">BEST</li>
+                                            <li class="c-btn1">12.02 오픈</li>
+                                        </ul>
+                                        <strong class="card-title">꾸준한 수익을 만드는 이모티콘 플러스 실전
+                                            공략서</strong>
+                                        <span class="card-note">이모티콘 작가 쥐냥</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="card">
+                                <a href="#" class="card-link"><!--전체영역이  링크-->
+                                    <img src="img/Dimg2.jpg" alt="">
+                                    <div class="card-caption">
+                                        <ul class="card-labels">
+                                            <li class="c-btn3">HOT</li>
+                                            <li class="c-btn1">수강가능</li>
+                                        </ul>
+                                        <strong class="card-title">투명하고 반짝거리는 나만의 2D 남캐 일러스트</strong>
+                                        <span class="card-note">일러스트레이터 구공</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="card">
+                                <a href="#" class="card-link"><!--전체영역이  링크-->
+                                    <img src="img/Dimg3.jpg" alt="">
+                                    <div class="card-caption">
+                                        <ul class="card-labels">
+                                            <li class="c-btn1 hidden">10.23 오픈</li>
+                                            <li class="c-btn2">UI/UX</li>
+                                        </ul>
+                                        <strong class="card-title">먹칠로 표현하는 다이나믹 흑백 캐릭터 일러스트</strong>
+                                        <span class="card-note">일러스트레이터 원현</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="card">
+                                <a href="#" class="card-link"><!--전체영역이  링크-->
+                                    <img src="img/Dimg4.jpg" alt="">
+                                    <div class="card-caption">
+                                        <ul class="card-labels">
+                                            <li class="c-btn3 hidden">HOT</li>
+                                            <li class="c-btn1">수강가능</li>
+                                        </ul>
+                                        <strong class="card-title">[Part. 01] 첫 허들을 뛰어넘는 입문 필수 그림
+                                            기본기 스터디</strong>
+                                        <span class="card-note">일러스트레이터 건망</span>
+                                    </div>
+                                </a>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--inner-->
+        </section>
+
+    </main>
+    <footer id="footer">
+        <div class="container1 inner">
+            <h3><a href="#"><img src="img/logo.svg" alt=""></a></h3>
+            <ul>
+                <li>공지사항</li>
+                <li>채용안내</li>
+                <li>FAQ</li>
+                <li>이용안내</li>
+                <li>개인정보처리방침</li>
+                <li>환불규정</li>
+            </ul>
+            <div class="call">
+                <ul>
+                    <li><h4>고객센터</h4></li>
+                    <li><span>*주중 10시~18시 / 주말 및 공휴일 제외</span></li>
+                </ul>
+                <button>문의하기</button>
+            </div>
+        </div>
+        <div class="container2 inner">
+            <h2>coloso_KR</h2>
+            <ul class="line1">
+                <li>(주) 데이원컴퍼니</li>
+                <li>CEO: 이강민</li>
+                <li>주소: 서울시 강남구 테헤란로 231, 6층 7층(센터필드 웨스트)</li>
+                <li>02-501-6222</li>
+                <li>이메일: help@coloso.co.kr</li>
+            </ul>
+            <ul class="line1">
+                <li>개인정보책임관리자: 이강민</li>
+                <li>사업자등록번호: 810-86-00658</li>
+                <li>통신판매업 신고번호: 제 2017-서울강남-01977호</li>
+                <li>원격평생교육원: 제 572호</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

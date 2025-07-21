@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url(../font/font.css);
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -32,6 +32,16 @@ template {
   display: none;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 
+    1rem = 10px
+    (기본 16px 기준에서 62.5%로 설정해 놓으면 16px의 62.5%인 10px이 된다)
+    */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
 
 *,
 *:before,
@@ -47,8 +57,11 @@ template {
 
 body {
   margin: 0;
-  font-family: "Noto Sans KR", serif;
-  font-size: 16px;
+  font-family: 'SpoqaHanSansNeo-Regular';
+  /* Coloso에 맞춰 기본 서체 설정 */
+  font-size: 1.6rem;
+  /* 기본 16px 설정 */
+  line-height: 1.6;
   background-color: #fff;
 }
 
