@@ -1,4 +1,4 @@
-@import url(../font/font.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&display=swap');
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -159,4 +159,5 @@ small {
 /* Remove focus outline in non-keyboard interactions */
 *:focus:not(:focus-visible) {
   outline: 0;
+
 }
