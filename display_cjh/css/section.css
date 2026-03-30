@@ -845,6 +845,11 @@ ul.web_storyTxt {
     font-family: 'Pretendard-Bold';
     font-size: 30px;
 }
+
+.thanks {
+    height: 1000px;
+    position: relative;
+}
 .won {
     width: 500px;
     height: 500px;
