@@ -798,8 +798,18 @@ ul.web_storyTxt {
 
 /* sec11 */
 .Epilogue {
-    height: 544px;
+    height: 600px;
     background-color: #D7EFF9;
+
+}
+
+.Insight{
+
+}
+
+.Limitation{
+    background-color: #fff;
+    margin-top: 150px;
 }
 
 .txtwrap {
@@ -812,6 +822,8 @@ ul.web_storyTxt {
     font-size: 60px;
     line-height: 110px;
     color: #fff;
+    padding-top: 60px;
+
 }
 
 .txtwrap>p {
@@ -822,11 +834,17 @@ ul.web_storyTxt {
     margin-top: 43px;
 }
 
-.thanks {
-    height: 1000px;
-    position: relative;
+.txtwrap>h6{
+    font-family: 'Pretendard-Bold';
+    font-size: 60px;
+    line-height: 110px;
+    color: #D7EFF9;
 }
 
+.txtwrap>.big{
+    font-family: 'Pretendard-Bold';
+    font-size: 30px;
+}
 .won {
     width: 500px;
     height: 500px;
