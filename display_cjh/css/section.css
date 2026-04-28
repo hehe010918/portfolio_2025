@@ -799,6 +799,7 @@ ul.web_storyTxt {
 /* sec11 */
 .Epilogue {
     height: 600px;
+    magin: 50px 0;
     background-color: #D7EFF9;
 
 }
