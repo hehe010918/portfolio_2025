@@ -798,8 +798,7 @@ ul.web_storyTxt {
 
 /* sec11 */
 .Epilogue {
-    height: 600px;
-    margin: 170px 0;
+    height: 800px;
     background-color: #D7EFF9;
 
 }
@@ -810,6 +809,7 @@ ul.web_storyTxt {
 
 .Limitation{
     background-color: #fff;
+    margin-top:170px;
     }
 
 .txtwrap {
